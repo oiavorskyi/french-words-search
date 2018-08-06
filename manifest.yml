@@ -1,0 +1,4 @@
+---
+applications:
+    - name: french-multisearch
+      memory: 32M

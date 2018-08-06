@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body style="background-color:grey">
+
+<p>What French word would you like to multisearch? Type below, then press enter please.</p>
+<input type="text" id="boxu" autofocus>
+
+		<script>
+document.getElementById("boxu").onkeydown = function(e) {searchy(e)};
+function searchy(e) 
+{
+	if (e.which == 13)
+	{
+  	    var q = document.getElementById("boxu").value;
+		q = encodeURIComponent(q);
+	    window.open("http://www.google.fr/search?q=" + q + "&num=20&hl=fr&site=imghp&tbm=isch&sout=1&biw=1242&bih=640");
+            window.open("http://fr.forvo.com/word/" + q + "/#fr");
+            window.open("http://www.linguee.com/english-french/search?source=french&query=" + q);
+            window.open("http://fr.wiktionary.org/wiki/" + q);	 	 	 
+	 document.getElementById("boxu").value = "";		
+	}
+}
+		</script>
+	</body>
+</html>
+
+	
