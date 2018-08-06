@@ -16,8 +16,8 @@ function searchy(e)
   	    var q = document.getElementById("boxu").value;
 		q = encodeURIComponent(q);
 	    window.open("http://www.google.fr/search?q=" + q + "&num=20&hl=fr&site=imghp&tbm=isch&sout=1&biw=1242&bih=640");
-            window.open("http://fr.forvo.com/word/" + q + "/#fr");
             window.open("http://www.linguee.com/english-french/search?source=french&query=" + q);
+            window.open("http://context.reverso.net/translation/french-english/" + q);
             window.open("http://fr.wiktionary.org/wiki/" + q);	 	 	 
 	 document.getElementById("boxu").value = "";		
 	}
